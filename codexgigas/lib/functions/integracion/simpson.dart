@@ -120,21 +120,21 @@ class _SimpsonUnTercioFormState extends State<SimpsonUnTercioForm> {
     // --- END RESTORED VALIDATION ---
 
     try {
-      // Using the endpoint from your provided code: /simpson
-      final Uri uri = Uri.parse('$api_ip/simpson');
+      // // Using the endpoint from your provided code: /simpson
+      // final Uri uri = Uri.parse('$api_ip/simpson');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          // Use keys from your provided code
-          'funcion_entrada': funcionInput,
-          'valor_a': aVal,
-          'valor_b': bVal,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     // Use keys from your provided code
+      //     'funcion_entrada': funcionInput,
+      //     'valor_a': aVal,
+      //     'valor_b': bVal,
+      //   }),
+      // );
 
       setState(() {
         result = ["0.3333333333333333"];

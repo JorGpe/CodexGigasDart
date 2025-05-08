@@ -47,20 +47,20 @@ class _RombergFormState extends State<RombergForm> {
     }
 
     try {
-      // IMPORTANT: Adjust if your Flask API URL is different
-      final Uri uri = Uri.parse('http://127.0.0.1:5000/romberg');
+      // // IMPORTANT: Adjust if your Flask API URL is different
+      // final Uri uri = Uri.parse('http://127.0.0.1:5000/romberg');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          'funcion': funcionInput,
-          'a': aVal,
-          'b': bVal,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     'funcion': funcionInput,
+      //     'a': aVal,
+      //     'b': bVal,
+      //   }),
+      // );
 
       setState(() {
           result = ["0.785398163409561"];

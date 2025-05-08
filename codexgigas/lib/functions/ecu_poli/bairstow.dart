@@ -72,19 +72,19 @@ class _BairstowFormState extends State<BairstowForm> {
 
     try {
 
-      final Uri uri = Uri.parse('$api_ip/bairstow');
+      // final Uri uri = Uri.parse('$api_ip/bairstow');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          'lista_valores': listaCoeficientes, // Key for coefficients
-          'valor_r': rVal,
-          'valor_s': sVal,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     'lista_valores': listaCoeficientes, // Key for coefficients
+      //     'valor_r': rVal,
+      //     'valor_s': sVal,
+      //   }),
+      // );
 
       setState(() {
           resultRaices = [

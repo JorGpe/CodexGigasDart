@@ -62,22 +62,22 @@ class _EulerCauchyFormState extends State<EulerCauchyForm> {
     }
 
     try {
-      // IMPORTANT: Adjust if your Flask API URL is different
-      final Uri uri = Uri.parse('http://127.0.0.1:5000/euler_cauchy');
+      // // IMPORTANT: Adjust if your Flask API URL is different
+      // final Uri uri = Uri.parse('http://127.0.0.1:5000/euler_cauchy');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          'funcion': funcionInput,
-          't0': t0Val,
-          'y0': y0Val,
-          'h': hVal,
-          'n': nVal,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     'funcion': funcionInput,
+      //     't0': t0Val,
+      //     'y0': y0Val,
+      //     'h': hVal,
+      //     'n': nVal,
+      //   }),
+      // );
 
       setState(() {
           result = ["2.714080846608224"];

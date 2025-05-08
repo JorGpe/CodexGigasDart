@@ -123,20 +123,20 @@ class _TrapecioFormState extends State<TrapecioForm> {
 
 
     try {
-      final Uri uri = Uri.parse('$api_ip/trapecio');
+      // final Uri uri = Uri.parse('$api_ip/trapecio');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          // Send the parsed double values
-          'funcion_entrada': funcionInput,
-          'valor_a': aVal,
-          'valor_b': bVal,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     // Send the parsed double values
+      //     'funcion_entrada': funcionInput,
+      //     'valor_a': aVal,
+      //     'valor_b': bVal,
+      //   }),
+      // );
 
       setState(() {
         result = ["1.9236706937217898e-16"];

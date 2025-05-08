@@ -47,20 +47,20 @@ class _TrapecioAbiertoN1FormState extends State<TrapecioAbiertoN1Form> {
     }
 
     try {
-      // IMPORTANT: Adjust if your Flask API URL is different
-      final Uri uri = Uri.parse('http://127.0.0.1:5000/trapecio_abierto_n1');
+      // // IMPORTANT: Adjust if your Flask API URL is different
+      // final Uri uri = Uri.parse('http://127.0.0.1:5000/trapecio_abierto_n1');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          'funcion': funcionInput,
-          'a': aVal,
-          'b': bVal,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     'funcion': funcionInput,
+      //     'a': aVal,
+      //     'b': bVal,
+      //   }),
+      // );
 
       setState(() {
           result = ["0.41000000000000003"];

@@ -47,20 +47,20 @@ class _GaussLegendreN3FormState extends State<GaussLegendreN3Form> {
     }
 
     try {
-      // IMPORTANT: Adjust if your Flask API URL is different
-      final Uri uri = Uri.parse('http://127.0.0.1:5000/gauss_legendre_n3');
+      // // IMPORTANT: Adjust if your Flask API URL is different
+      // final Uri uri = Uri.parse('http://127.0.0.1:5000/gauss_legendre_n3');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          'funcion': funcionInput,
-          'a': aVal,
-          'b': bVal,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     'funcion': funcionInput,
+      //     'a': aVal,
+      //     'b': bVal,
+      //   }),
+      // );
 
       setState(() {
           result = ["1.743934249004316e-16"];

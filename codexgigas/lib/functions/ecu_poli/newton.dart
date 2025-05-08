@@ -70,18 +70,18 @@ class _NewtonInterpolationFormState extends State<NewtonInterpolationForm> {
     }
 
     try {
-      final Uri uri = Uri.parse('$api_ip/newton');
+      // final Uri uri = Uri.parse('$api_ip/newton');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          'lista_x': listaX,
-          'lista_y': listaY,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     'lista_x': listaX,
+      //     'lista_y': listaY,
+      //   }),
+      // );
 
 
     setState(() {

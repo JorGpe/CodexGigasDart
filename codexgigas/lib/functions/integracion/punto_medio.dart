@@ -47,20 +47,20 @@ class _PuntoMedioFormState extends State<PuntoMedioForm> {
     }
 
     try {
-      // IMPORTANT: Adjust if your Flask API URL is different
-      final Uri uri = Uri.parse('http://127.0.0.1:5000/punto_medio');
+      // // IMPORTANT: Adjust if your Flask API URL is different
+      // final Uri uri = Uri.parse('http://127.0.0.1:5000/punto_medio');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          'funcion': funcionInput,
-          'a': aVal,
-          'b': bVal,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     'funcion': funcionInput,
+      //     'a': aVal,
+      //     'b': bVal,
+      //   }),
+      // );
 
       setState(() {
         result = ["3.141592653589793"];

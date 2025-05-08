@@ -47,20 +47,20 @@ class _SimpsonAbiertoN2FormState extends State<SimpsonAbiertoN2Form> {
     }
 
     try {
-      // IMPORTANT: Adjust if your Flask API URL is different
-      final Uri uri = Uri.parse('http://127.0.0.1:5000/simpson_abierto_n2');
+      // // IMPORTANT: Adjust if your Flask API URL is different
+      // final Uri uri = Uri.parse('http://127.0.0.1:5000/simpson_abierto_n2');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          'funcion': funcionInput,
-          'a': aVal,
-          'b': bVal,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     'funcion': funcionInput,
+      //     'a': aVal,
+      //     'b': bVal,
+      //   }),
+      // );
 
       setState(() {
         result = ["Resultado de la integral aproximada: 0.3866845234637002"];

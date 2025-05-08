@@ -88,22 +88,22 @@ class _EulerSistemasFormState extends State<EulerSistemasForm> {
     }
 
     try {
-      // IMPORTANT: Adjust if your Flask API URL is different
-      final Uri uri = Uri.parse('http://127.0.0.1:5000/euler_sistemas');
+      // // IMPORTANT: Adjust if your Flask API URL is different
+      // final Uri uri = Uri.parse('http://127.0.0.1:5000/euler_sistemas');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          'funciones': listaFunciones,
-          't0': t0Val,
-          'y0': listaY0,
-          'h': hVal,
-          'n': nVal,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     'funciones': listaFunciones,
+      //     't0': t0Val,
+      //     'y0': listaY0,
+      //     'h': hVal,
+      //     'n': nVal,
+      //   }),
+      // );
 
       setState(() {
           result = ["0.5707904498999999", "-0.8825080100000001"];

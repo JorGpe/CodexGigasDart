@@ -84,19 +84,19 @@ class _MinimosCuadradosFormState extends State<MinimosCuadradosForm> {
 
     try {
 
-      final Uri uri = Uri.parse('$api_ip/minimos_cuadrados');
+      // final Uri uri = Uri.parse('$api_ip/minimos_cuadrados');
 
-      final http.Response response = await http.post(
-        uri,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-        body: jsonEncode(<String, dynamic>{
-          'lista_x': listaX,
-          'lista_y': listaY,
-          //'valor_a_evaluar': targetX,
-        }),
-      );
+      // final http.Response response = await http.post(
+      //   uri,
+      //   headers: <String, String>{
+      //     'Content-Type': 'application/json; charset=UTF-8',
+      //   },
+      //   body: jsonEncode(<String, dynamic>{
+      //     'lista_x': listaX,
+      //     'lista_y': listaY,
+      //     //'valor_a_evaluar': targetX,
+      //   }),
+      // );
 
       setState(() {
         result = [
