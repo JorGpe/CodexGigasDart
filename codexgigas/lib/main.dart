@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 
-
-import 'package:codexgigas/landing/landing.dart';
 import 'package:codexgigas/navigation/navigation.dart';
 
 void main() {
@@ -20,16 +18,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      routerConfig: global_router,
+      routerConfig: globalRouter,
       title: 'Codex Gigas - Analisis Numérico',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
       ),
-      // Removed the direct 'home' property as it's now managed by GoRouter
-      // home: SelectableRegion(
-      //   selectionControls: materialTextSelectionControls,
-      //   child: const LandingPage()
-      // ),
     );
   }
 }

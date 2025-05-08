@@ -88,7 +88,10 @@ class _LandingPageState extends State<LandingPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
-        title: const Text("Codex Gigas - Analisis Numérico"),
+        title: Text(
+          "Codex Gigas - Analisis Numérico",
+          style: TextStyle(color: Theme.of(context).colorScheme.onPrimary),
+        ),
         centerTitle: true,
       ),
       body: ListView.builder(

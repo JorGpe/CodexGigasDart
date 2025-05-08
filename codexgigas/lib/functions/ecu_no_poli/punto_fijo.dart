@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'dart:js_interop';
+import 'package:codexgigas/functions/api_ip.dart';
+
 
 
 class PuntoFijoForm extends StatefulWidget {
-  const PuntoFijoForm({super.key, required this.data});
-  final String data; // Keep the 'data' argument if you need it
+  const PuntoFijoForm({super.key});
 
   @override
   State<PuntoFijoForm> createState() => _PuntoFijoFormState();
@@ -38,7 +39,7 @@ class _PuntoFijoFormState extends State<PuntoFijoForm> {
     }
 
     try {
-      final Uri uri = Uri.parse('http://127.0.0.1:5000/punto_fijo'); // Replace with your Flask API URL
+      final Uri uri = Uri.parse('$api_ip/punto_fijo'); // Replace with your Flask API URL
 
       final http.Response response = await http.post(
         uri,
@@ -73,9 +74,13 @@ class _PuntoFijoFormState extends State<PuntoFijoForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold( // Added Scaffold as the root widget
+    return Scaffold(
       appBar: AppBar(
-        title: const Text('Punto Fijo Calculator'),
+        title: Text(
+          'Punto Fijo Calculator',
+          style: TextStyle(color: Theme.of(context).colorScheme.onPrimary),
+        ),
+        backgroundColor: Theme.of(context).colorScheme.primary,
       ),
       body: Center(
         child: Padding(
@@ -161,7 +166,7 @@ class _PuntoFijoFormState extends State<PuntoFijoForm> {
 
 Future<Map<String, dynamic>> callPuntoFijo(
   String funcionEntrada, double valorInicial) async {
-  final Uri uri = Uri.parse('http://127.0.0.1:5000/punto_fijo'); // Replace with your Flask API URL
+  final Uri uri = Uri.parse('$api_ip/punto_fijo'); // Replace with your Flask API URL
 
   try {
     final http.Response response = await http.post(
