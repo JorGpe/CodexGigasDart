@@ -19,10 +19,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       routerConfig: global_router,
       title: 'Codex Gigas - Analisis Numérico',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightGreen),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
       ),
       // Removed the direct 'home' property as it's now managed by GoRouter
       // home: SelectableRegion(
